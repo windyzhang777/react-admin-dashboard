@@ -4,8 +4,7 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import { Box, IconButton, useTheme } from "@mui/material";
-import InputBase from "@mui/material/InputBase";
+import { Box, IconButton, InputBase, useTheme } from "@mui/material";
 import React from "react";
 import UseColorModeContext from "../../hooks/useColorModeContext";
 import { tokens } from "../../theme";

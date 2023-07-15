@@ -19,7 +19,7 @@ export const tokens = (mode) => ({
           100: "#d0d1d5",
           200: "#a1a4ab",
           300: "#727681",
-          400: "#434957",
+          400: "#1F2A40", // manually changed
           500: "#141b2d",
           600: "#101624",
           700: "#0c101b",
@@ -159,30 +159,44 @@ export const themeSettings = (mode) => {
           }),
     },
     typography: {
-      fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+      fontFamily: ["Source Sans Pro", "sans-serif"].join(
+        ","
+      ),
       fontSize: 12,
       h1: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Source Sans Pro", "sans-serif"].join(
+          ","
+        ),
         fontSize: 40,
       },
       h2: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Source Sans Pro", "sans-serif"].join(
+          ","
+        ),
         fontSize: 32,
       },
       h3: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Source Sans Pro", "sans-serif"].join(
+          ","
+        ),
         fontSize: 24,
       },
       h4: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Source Sans Pro", "sans-serif"].join(
+          ","
+        ),
         fontSize: 20,
       },
       h5: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Source Sans Pro", "sans-serif"].join(
+          ","
+        ),
         fontSize: 16,
       },
       h6: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Source Sans Pro", "sans-serif"].join(
+          ","
+        ),
         fontSize: 14,
       },
     },
@@ -198,11 +212,16 @@ export const useMode = () => {
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () =>
-        setMode((prev) => (prev === "light" ? "dark" : "light")),
+        setMode((prev) =>
+          prev === "light" ? "dark" : "light"
+        ),
     }),
     []
   );
-  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+  const theme = useMemo(
+    () => createTheme(themeSettings(mode)),
+    [mode]
+  );
 
   return [theme, colorMode];
 };

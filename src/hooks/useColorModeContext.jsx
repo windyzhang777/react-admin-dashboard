@@ -6,5 +6,6 @@ export default function UseColorModeContext() {
   if (!context) {
     throw Error(`ColorModeContext used out of scope`);
   }
+
   return context;
 }
