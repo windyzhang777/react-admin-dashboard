@@ -14,11 +14,11 @@ import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import React, { useState } from "react";
 import { Menu, MenuItem, Sidebar as ProSidebar } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
-import { tokens } from "../../theme";
+import { allColors } from "../../theme";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const colors = allColors(theme.palette.mode);
 
   return (
     <MenuItem
@@ -37,7 +37,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 
 export default function Sidebar() {
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const colors = allColors(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("dashboard");
 
@@ -58,6 +58,7 @@ export default function Sidebar() {
         },
         "& .ps-menu-button:hover": {
           color: "#868dfb !important",
+          backgroundColor: "transparent !important",
         },
         "& .ps-menu-label:hover *": {
           color: "#868dfb !important",
