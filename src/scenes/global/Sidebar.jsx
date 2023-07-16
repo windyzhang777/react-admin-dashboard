@@ -39,7 +39,7 @@ export default function Sidebar() {
   const theme = useTheme();
   const colors = allColors(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected] = useState("dashboard");
+  const [selected, setSelected] = useState("Dashboard");
 
   return (
     <Box
