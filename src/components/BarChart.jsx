@@ -44,6 +44,11 @@ export const BarChart = ({ isDashboard = false }) => {
             fill: colors.grey[100],
           },
         },
+        tooltip: {
+          container: {
+            background: colors.grey[800],
+          },
+        },
       }}
       defs={[
         {
