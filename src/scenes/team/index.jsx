@@ -14,7 +14,7 @@ export default function Team() {
   const columns = [
     { field: "id", headerName: "ID" },
     { field: "name", headerName: "Name", flex: 1 },
-    { field: "age", headerName: "Age" },
+    { field: "age", headerName: "Age", type: "number" },
     { field: "phone", headerName: "Phone", flex: 1 },
     { field: "email", headerName: "Email", flex: 1 },
     {
@@ -40,7 +40,12 @@ export default function Team() {
           {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
           {access === "manager" && <SecurityOutlinedIcon />}
           {access === "user" && <LockOpenOutlinedIcon />}
-          <Typography color={colors.grey[100]} ml={"5px"}>
+          <Typography
+            color={colors.grey[100]}
+            ml={"5px"}
+            width={"50px"}
+            textAlign={"center"}
+          >
             {access}
           </Typography>
         </Box>

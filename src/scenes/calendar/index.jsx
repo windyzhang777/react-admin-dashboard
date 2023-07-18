@@ -6,31 +6,20 @@ import listPlugin from "@fullcalendar/list";
 import FullCalendar from "@fullcalendar/react";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Header from "../../components/Header";
 import { allColors } from "../../theme";
 
 const INITIAL_EVENTS = [
-  {
-    id: "2023-07-01",
-    title: "test1",
-    date: "2023-07-01",
-  },
-  {
-    id: "2023-07-10",
-    title: "test2",
-    date: "2023-07-10",
-  },
+  { id: "2023-07-01", title: "test1", date: "2023-07-01" },
+  { id: "2023-07-10", title: "test2", date: "2023-07-10" },
 ];
 
 export default function Calendar({}) {
   const theme = useTheme();
   const colors = allColors(theme.palette.mode);
   const [eventList, setEventList] = useState([]);
-  useEffect(() => {
-    console.log(`eventList :`, JSON.stringify(eventList, null, 2));
-  }, [eventList]);
 
   const handleDateClick = (selected) => {
     console.log(`selected :`, JSON.stringify(selected, null, 2));
@@ -57,7 +46,6 @@ export default function Calendar({}) {
   return (
     <Box m="20px">
       <Header title="Calendar" subtitle="Interactive Calendar" />
-
       <Box display={"flex"} justifyContent={"space-between"}>
         {/* EVENT SIDEBAR */}
         <Box
