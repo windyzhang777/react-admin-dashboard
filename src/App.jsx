@@ -6,6 +6,7 @@ import Contacts from "./scenes/contacts";
 import Dashboard from "./scenes/dashboard";
 import Faq from "./scenes/faq";
 import ProfileForm from "./scenes/form";
+import Geography from "./scenes/geography";
 import Sidebar from "./scenes/global/Sidebar";
 import Topbar from "./scenes/global/Topbar";
 import Invoices from "./scenes/invoices";
@@ -36,6 +37,7 @@ export default function App() {
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/line" element={<Line />} />
+                <Route path="/geography" element={<Geography />} />
               </Routes>
             </main>
           </div>
