@@ -9,6 +9,7 @@ import ProfileForm from "./scenes/form";
 import Sidebar from "./scenes/global/Sidebar";
 import Topbar from "./scenes/global/Topbar";
 import Invoices from "./scenes/invoices";
+import Pie from "./scenes/pie";
 import Team from "./scenes/team";
 import { ColorModeContext, useMode } from "./theme";
 
@@ -32,6 +33,7 @@ export default function App() {
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/bar" element={<Bar />} />
+                <Route path="/pie" element={<Pie />} />
               </Routes>
             </main>
           </div>
