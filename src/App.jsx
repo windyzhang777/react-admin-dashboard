@@ -1,5 +1,6 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
+import Bar from "./scenes/bar";
 import Calendar from "./scenes/calendar";
 import Contacts from "./scenes/contacts";
 import Dashboard from "./scenes/dashboard";
@@ -30,6 +31,7 @@ export default function App() {
                 <Route path="/form" element={<ProfileForm />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/faq" element={<Faq />} />
+                <Route path="/bar" element={<Bar />} />
               </Routes>
             </main>
           </div>
