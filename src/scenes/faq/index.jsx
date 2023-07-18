@@ -1,4 +1,3 @@
-import { useTheme } from "@emotion/react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
   Accordion,
@@ -6,6 +5,7 @@ import {
   AccordionSummary,
   Box,
   Typography,
+  useTheme,
 } from "@mui/material";
 import React from "react";
 import { Header } from "../../components/Header";

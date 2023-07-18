@@ -1,5 +1,4 @@
-import { useTheme } from "@emotion/react";
-import { Box } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import React from "react";
 import { GeographyChart } from "../../components/GeographyChart";
 import { Header } from "../../components/Header";

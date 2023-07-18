@@ -1,4 +1,4 @@
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material";
 import { ResponsiveLine } from "@nivo/line";
 import { mockLineData } from "../data/mockData";
 import { allColors } from "../theme";

@@ -1,4 +1,4 @@
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material";
 import { ResponsiveChoropleth } from "@nivo/geo";
 import { mockGeographyData } from "../data/mockData";
 import { geoFeatures } from "../data/mockGeoFeatures";

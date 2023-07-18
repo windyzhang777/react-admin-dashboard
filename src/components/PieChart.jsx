@@ -1,4 +1,4 @@
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material";
 import { ResponsivePie } from "@nivo/pie";
 import { mockPieData } from "../data/mockData";
 import { allColors } from "../theme";
