@@ -4,7 +4,7 @@ import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import React from "react";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import { mockDataTeam } from "../../data/mockData";
 import { allColors } from "../../theme";
 

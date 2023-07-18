@@ -8,7 +8,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import { allColors } from "../../theme";
 
 const INITIAL_EVENTS = [

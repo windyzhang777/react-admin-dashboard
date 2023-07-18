@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import { allColors } from "../../theme";
 
 const FAQ = [

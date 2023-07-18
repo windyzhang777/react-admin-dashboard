@@ -1,7 +1,7 @@
 import { Box, useTheme } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import React from "react";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import { mockDataContacts } from "../../data/mockData";
 import { allColors } from "../../theme";
 
@@ -22,10 +22,7 @@ export default function Contacts() {
 
   return (
     <Box m={"20px"}>
-      <Header
-        title={"CONTACTS"}
-        subtitle={"List of Contacts"}
-      />
+      <Header title={"CONTACTS"} subtitle={"List of Contacts"} />
       <Box
         m={"40px 0 0 0"}
         height={"75vh"}
@@ -53,10 +50,9 @@ export default function Contacts() {
           "& .MuiCheckbox-root": {
             color: `${colors.greenAccent[200]} !important`,
           },
-          "& .MuiDataGrid-toolbarContainer .MuiButton-text":
-            {
-              color: `${colors.grey[100]} !important`,
-            },
+          "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
+            color: `${colors.grey[100]} !important`,
+          },
         }}
       >
         <DataGrid

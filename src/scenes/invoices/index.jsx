@@ -1,7 +1,7 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import React from "react";
-import Header from "../../components/Header";
+import { Header } from "../../components/Header";
 import { mockDataInvoices } from "../../data/mockData";
 import { allColors } from "../../theme";
 
@@ -18,9 +18,7 @@ export default function Invoices() {
       headerName: "Cost",
       type: "number",
       renderCell: ({ row: { cost } }) => (
-        <Typography color={colors.greenAccent[500]}>
-          ${cost}
-        </Typography>
+        <Typography color={colors.greenAccent[500]}>${cost}</Typography>
       ),
     },
     { field: "date", headerName: "Date", flex: 1 },
@@ -28,10 +26,7 @@ export default function Invoices() {
 
   return (
     <Box m={"20px"}>
-      <Header
-        title={"INVOICES"}
-        subtitle={"List of Invoices"}
-      />
+      <Header title={"INVOICES"} subtitle={"List of Invoices"} />
       <Box
         m={"40px 0 0 0"}
         height={"75vh"}
@@ -61,11 +56,7 @@ export default function Invoices() {
           },
         }}
       >
-        <DataGrid
-          checkboxSelection
-          rows={mockDataInvoices}
-          columns={columns}
-        />
+        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns} />
       </Box>
     </Box>
   );
