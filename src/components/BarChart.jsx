@@ -70,20 +70,6 @@ export const BarChart = ({ isDashboard = false }) => {
           spacing: 10,
         },
       ]}
-      fill={[
-        {
-          match: {
-            id: "fries",
-          },
-          id: "dots",
-        },
-        {
-          match: {
-            id: "sandwich",
-          },
-          id: "lines",
-        },
-      ]}
       borderColor={{
         from: "color",
         modifiers: [["darker", 1.6]],
@@ -99,6 +85,7 @@ export const BarChart = ({ isDashboard = false }) => {
         legendOffset: 32,
       }}
       axisLeft={{
+        tickValues: isDashboard ? 4 : undefined,
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
@@ -106,6 +93,7 @@ export const BarChart = ({ isDashboard = false }) => {
         legendPosition: "middle",
         legendOffset: -40,
       }}
+      enableLabel={isDashboard ? false : true}
       labelSkipWidth={12}
       labelSkipHeight={12}
       labelTextColor={{

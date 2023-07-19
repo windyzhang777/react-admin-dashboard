@@ -3,7 +3,7 @@ import React from "react";
 import { allColors } from "../theme";
 import { ProgressCircle } from "./ProgressCircle";
 
-export const StatBox = ({ icon, stat, title, progress, increase }) => {
+export const StatBox = ({ icon, stat, desc, progress, increase }) => {
   const theme = useTheme();
   const colors = allColors(theme.palette.mode);
 
@@ -25,7 +25,7 @@ export const StatBox = ({ icon, stat, title, progress, increase }) => {
             fontWeight="bold"
             sx={{ color: colors.grey[100] }}
           >
-            {stat}
+            {parseFloat(stat).toLocaleString("en-US")}
           </Typography>
         </Box>
         <Box>
@@ -35,7 +35,7 @@ export const StatBox = ({ icon, stat, title, progress, increase }) => {
       {/* TITLE & INCREASE */}
       <Box display="flex" justifyContent="space-between" mt="2px">
         <Typography variant="h5" sx={{ color: colors.greenAccent[500] }}>
-          {title}
+          {desc}
         </Typography>
         <Typography
           variant="h5"
