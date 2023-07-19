@@ -30,7 +30,7 @@ const FAQ = [
   },
 ];
 
-export default function Faq({}) {
+export default function Faq() {
   const theme = useTheme();
   const colors = allColors(theme.palette.mode);
   return (

@@ -22,7 +22,7 @@ const INITIAL_EVENTS = [
   { id: "2023-07-10", title: "test2", date: "2023-07-10" },
 ];
 
-export default function Calendar({}) {
+export default function Calendar() {
   const theme = useTheme();
   const colors = allColors(theme.palette.mode);
   const [eventList, setEventList] = useState([]);
